@@ -16,8 +16,6 @@
             <div class="text-center">
                 <h2 class="text-4xl text-indigo-600 font-bold  ">Questions & Answers</h2>
             </div>
-
-
         </div>
     </header>
     <main>
@@ -25,11 +23,11 @@
             <dl class=" w-[80%] mx-auto rounded-3xl  ">
                 <!-- Questions-1 -->
                 <div class="mt-5 bg-blue-100 rounded-3xl">
-                    <h2 class="text-3xl px-6 pt-4 font-semibold text-green-600">1. What is the difference between map,
-                        filter, forEach, and find?
+                    <h2 class="text-3xl px-6 pt-4 font-semibold text-green-600">1. What is the difference between Map,
+                        Filter, ForEach and Find?
                     </h2>
-                    <p class="text-gray-500 text-2xl px-7 py-5"><span class="font-semibold text-pink-600">Ans:</span>
-                        The main differences between map, filter, forEach, and find are: <br>
+                    <p class="text-gray-500 text-2xl px-7 py-5"><span class="font-semibold  text-pink-600">Ans:</span>
+                        The main differences between map, filter, forEach, and find are- <br>
                         <span class="font-semibold text-pink-500">Map:</span>It transforms each element of an array by
                         applying a given function to it and returns a new array with the transformed values. The
                         resulting array will have the same length as the original <br>
@@ -53,12 +51,11 @@
                         storage section storage and cookies?
                     </h2>
                     <p class="text-gray-500 text-2xl px-7 py-5"><span class="font-semibold text-pink-600">Ans:</span>
-                        The differences between local storage section storage and cookies are given below:: <br>
+                        The differences between local storage section storage and cookies are given below- <br>
                         <span class="font-semibold text-pink-500">Local Storage: </span>It is a web storage mechanism
                         that allows storing larger amounts of data (up to 5MB) locally on the user's browser. The data
                         stored in local storage remains persistent even after closing the browser or rebooting the
                         device, and it is accessible only to the same domain that created it. <br>
-
                         <span class="font-semibold text-pink-500">Session Storage: </span>Similar to local storage,
                         session storage is a web storage mechanism that allows storing data on the user's browser.
                         However, session storage is limited to the current session or tab, and the data is cleared when
@@ -70,7 +67,6 @@
                         across domains.
                     </p>
                 </div>
-
                 <!-- Questions-3 -->
                 <div class="mt-5 bg-blue-100 rounded-3xl">
                     <h2 class="text-3xl px-6 pt-4 font-semibold text-green-600">3.What is an event loop and how does it
@@ -80,14 +76,29 @@
                         The event loop is a core component of JavaScript's runtime that manages the execution of code.
                         It continuously checks for tasks to execute from an event queue. When a task is encountered, it
                         is executed, and any resulting callbacks are added to the queue. This allows JavaScript to
-                        handle asynchronous operations efficiently, ensuring smooth and non-blocking execution of code.
-
-
+                        handle asynchronous operations efficiently, ensuring smooth and non-blocking execution of code
                 </div>
-
+                <!-- Questions-4 -->
+                <div class="mt-5 bg-blue-100 rounded-3xl">
+                    <h2 class="text-3xl px-6 pt-4 font-semibold text-green-600">4.How does the Quiz Timer function work?
+                    </h2>
+                    <p class="text-gray-500 text-2xl px-7 py-5"><span class="font-semibold text-pink-600">Ans:</span>
+                        The quizTimer function handles the display and behavior of a timer during a quiz. It updates the
+                        time every second, showing minutes and seconds. If the time exceeds 60 seconds, it alternates
+                        the text color to indicate a signal. If dismiss is true, it stops the timer.
+                </div>
+                <!-- Questions-5 -->
+                <div class="mt-5 bg-blue-100 rounded-3xl">
+                    <h2 class="text-3xl px-6 pt-4 font-semibold text-green-600">5.How does The ChooseQuiz function work?
+                    </h2>
+                    <p class="text-gray-500 text-2xl px-7 py-5"><span class="font-semibold text-pink-600">Ans:</span>
+                        The ChooseQuiz function is used to select a quiz option and store the user's answer. It checks
+                        if the answer already exists in the answers array and updates it if found, otherwise adds a new
+                        entry. It then displays the updated answers.
+                </div>
+        </div>
         </div>
     </main>
-
 </body>
 
 </html>
