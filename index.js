@@ -1,4 +1,4 @@
-// global variable declarationcalled
+// global variable declaration
 let count = 0;
 let timer;
 let quizData;
@@ -14,7 +14,7 @@ let answersContainer = document.querySelector("#answersContainer");
 let displayResult = document.querySelector("#displayResult");
 
 // EventListener for quiz start button
-document.getElementById("startQuiz").addEventListener("click", () => {
+document.getElementById('startQuiz').addEventListener("click", () => {
   let countDown = document.querySelector("#countDownContainer");
   let counter = document.querySelector("#counter");
   let counterNum = 2;
@@ -23,8 +23,8 @@ document.getElementById("startQuiz").addEventListener("click", () => {
 
   let x = setInterval(() => {
     if (counterNum < 0) {
-      counterNum.classList.remove("flex");
-      counterNum.classList.add("hidden");
+      countDown.classList.remove("flex");
+      countDown.classList.add("hidden");
       counterNum = 3;
       count = 0;
       timer = null;
@@ -48,6 +48,7 @@ const loadQuiz = async () => {
   const res = await fetch("./data/quiz.json");
   const data = await res.json();
   quizData = data;
+  // console.log(data[0].question)
   displayQuiz(data);
 };
 
@@ -64,7 +65,7 @@ const displayQuiz = (data) => {
     <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3">
       ${i + 1}
     </div>
-    <p class="text-gray-800 text-sm">${quiz.quetion}</p>
+    <p class="text-gray-800 text-sm">${quiz.question}</p>
   </div>
   <div class="grid grid-cols-2 gap-4 mt-5">
     ${displayQuizOptions(quiz.options, i)}
