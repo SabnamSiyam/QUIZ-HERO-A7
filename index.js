@@ -188,5 +188,5 @@ document.querySelector("#submit").addEventListener("click", () => {
 // Blog button:
 document.getElementById("blogBtn").addEventListener("click", () => {
   console.log("btn clicked");
-  location.href = "http://127.0.0.1:5500/blog.html";
+  location.href = "/blog.html";
 });
