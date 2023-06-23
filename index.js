@@ -184,3 +184,9 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+// Blog button:
+document.getElementById("blogBtn").addEventListener("click", () => {
+  console.log("btn clicked");
+  location.href = "http://127.0.0.1:5500/blog.html";
+});
